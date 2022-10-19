@@ -19,7 +19,7 @@ ofstream OutFile;
 static UINT64 icount = 0;
 
 // This function is called before every instruction is executed
-// TODO
+// TODO: complete the function docount() to accumulate the number of instruction
 
 // Pin calls this function every time a new instruction is encountered
 VOID Instruction(INS ins, VOID* v)
