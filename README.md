@@ -3,7 +3,7 @@
 ## Intro
 
 * Pin is a dynamic binary instrumentation framework for dynamic program analysis
-* Waht's the Dynamic Binary Instrumentation? 
+* What's the Dynamic Binary Instrumentation? 
     ```
     Machine Code --> IR --> IR --> Machine Code
             ^        ^      ^
