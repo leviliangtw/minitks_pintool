@@ -1,13 +1,9 @@
-# Pin Tool
-
-## Presiquites
-
-* g++
-* make
+# MiniTKS: Pin Tool
 
 ## Intro
 
-* Dynamic Binary Instrumentation
+* Pin is a dynamic binary instrumentation framework for dynamic program analysis
+* Waht's the Dynamic Binary Instrumentation? 
     ```
     Machine Code --> IR --> IR --> Machine Code
             ^        ^      ^
@@ -18,9 +14,16 @@
                             |
                          translate  
     ```
+* Instrumentation is performed at run time on the compiled binary files
+    * No requirement to recompile the source code
+* With the Pin framework, you can develop your own pin tool for what you want to analysis
 
+## Prerequisites
 
-## Exercise
+* g++
+* make
+
+## Exercises
 
 ### 01: Download Pin and build an example Pin Tool
 
@@ -57,6 +60,11 @@ $ make
 $ ../../../pin -t ./obj-intel64/inscount_broken.so -- ls
 $ cat inscount.out
 ```
+
+## Other Applications
+
+* FLOP Analysis: [Calculating “FLOP” using Intel® Software Development Emulator (Intel® SDE)](https://www.intel.com/content/www/us/en/developer/articles/technical/calculating-flop-using-intel-software-development-emulator-intel-sde.html)
+    * [Pin FLOP Counter](https://github.com/leviliangtw/pfc)
 
 ## References
 
